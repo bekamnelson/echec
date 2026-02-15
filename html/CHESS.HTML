@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu d'Échecs - JS</title>
+    <link rel="stylesheet" href="./../css/game.css">
+</head>
+
+<body>
+    <div id="game-container">
+    <h2 id="status">Tour : Blancs</h2>
+    <div id="board-wrapper">
+        <div id="chessboard"></div>
+    </div>
+</div>
+
+<div id="winner-overlay">
+    <div id="winner-card">
+        <h1 id="winner-text">Victoire !</h1>
+        <div class="button-group">
+            <button onclick="viewBoard()" class="btn-view">Visualiser le mat</button>
+            <button onclick="resetGame()" class="btn-reset">Rejouer</button>
+        </div>
+    </div>
+</div>
+
+<button id="return-to-menu" onclick="showWinnerMenu()">Retour au menu de victoire</button>
+<div id="promotion-overlay">
+    <h3>Choisissez une promotion :</h3>
+    <div id="promo-options"></div>
+</div>
+   <script type="text/javascript" src="./../js/script.js"></script>
+</body>
+</html>
